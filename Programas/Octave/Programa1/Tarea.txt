@@ -1,0 +1,6 @@
+El resultado de la sumatoria es: 20 
+El resultado de la multiplicación es: 6 
+El resultado de la concatenación es: 156 
+El Valor distinto es: 3 
+Los valores ingresados son: 5  5  5 
+Son iguales

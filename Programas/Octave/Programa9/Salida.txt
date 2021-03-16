@@ -1,0 +1,5 @@
+
+El area del circulo es: 3.14159 
+El area del Triangulo es: 15 
+El area del cuadrado es: 25 
+El area del cuadrado es: 30 

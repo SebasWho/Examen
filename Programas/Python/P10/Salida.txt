@@ -1,0 +1,3 @@
+Es un triangulo Isosceles
+Es un triangulo Equilatero
+Es un triangulo Escaleno

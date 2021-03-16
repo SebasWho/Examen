@@ -1,0 +1,30 @@
+*******PRIMER PROGRAMA********
+Promedio de altura masculino 1.7333333333333334
+Promedio de peso masculino 150.0
+Promedio de altura femenino 1.6
+Promedio de peso femenino 127.5
+*******SEGUNDO PROGRAMA********
+El resultado de la diferencia es: 25164150
+*******TERCER PROGRAMA********
+EL valor mas alto primo es: 29
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 1, 2, 3, 5, 8, 13, 21]
+*******QUINTO PROGRAMA********
+El area lateral es: 6.2832
+El area de la base es: 3.1416
+El area total es: 9.4248
+El volumen del cono es: 3.1415999999999995
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 2, 4, 8, 16, 32, 64, 128]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 1, 2, 3, 5, 8, 13, 21]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 2, 4, 8, 16, 32, 64, 128]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 2, 4, 8, 16, 32, 64, 128]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 2, 4, 8, 16, 32, 64, 128]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 2, 4, 8, 16, 32, 64, 128]
+*******CUARTO PROGRAMA********
+La sucession de fibonacci hasta el numero: 9 es: [0, 1, 1, 2, 3, 5, 8, 13, 21]

@@ -1,0 +1,10 @@
+
+Efectuando la suma de los tres valores: 20.0
+Efectuando la multiplicación de los tres valores: 15.0
+Efectuando la concatenacion: 1.02.03.0
+El Valor distinto es:3.0
+Estos fueron los tres valores ingresados: 
+5.0
+5.0
+5.0
+Son iguales

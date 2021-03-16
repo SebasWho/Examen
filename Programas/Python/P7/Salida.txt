@@ -1,0 +1,1 @@
+El resultado de la sumatoria hasta el numero: 6 es: 21

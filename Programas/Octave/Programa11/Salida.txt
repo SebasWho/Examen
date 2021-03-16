@@ -1,0 +1,4 @@
+El promedio es de: 76.6667 
+*********APROBADO********* 
+El promedio es de: 43.3333 
+*********REPROBADO********* 

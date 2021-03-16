@@ -1,0 +1,5 @@
+El area del circulo es: 3.141592653589793
+El area del triangulo es: 3.0
+El area del cuadrado es: 4.0
+El area del circulo es: 78.53981633974483
+El area del rectangulo es: 30.0

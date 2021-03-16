@@ -1,0 +1,1 @@
+archivo=open("Hola mundo","w")

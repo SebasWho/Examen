@@ -1,0 +1,4 @@
+Los divisores de 9 son: 
+1 
+3 
+9 
