@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\corde\Desktop\Proyectos de computacion\2doParcial\venv"
+VIRTUAL_ENV="C:\Users\corde\Desktop\Proyectos de computacion\2do_Parcial_P2\Problema 2\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
