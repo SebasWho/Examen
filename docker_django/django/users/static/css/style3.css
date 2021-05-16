@@ -1,0 +1,67 @@
+
+body{
+    background-image: url('medicina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-control{
+    background: #09041b80;
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    
+}
+
+.formulario{
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,.568);
+    color: white;
+}
+.text{
+    font-size: 14px;
+}
+
+.button{
+    background: #3152a5;
+    width: 290px; height: 45px;
+    margin-bottom: 40px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700!important;
+    box-shadow: 0 0 30px rgba(0,0,0,.568);
+    color: white;
+    transition: 0.5s ease-in;
+}
+.form-control::placeholder{
+    color: white;
+}
+.regis{
+    color: white;
+    text-decoration-style:none ;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700!important;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
+.regis:hover{
+    color: white;
+    text-decoration-style:none ;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+.salir li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    border: 3px solid #000103f8;
+}

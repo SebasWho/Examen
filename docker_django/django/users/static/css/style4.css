@@ -1,0 +1,67 @@
+body{
+    background-image: url('boletos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.text{
+    font-size: 18px;
+    font-weight:normal;
+    margin-right: 30px
+}
+.text1{
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 30px;
+    color: white;
+}
+.form-control::placeholder{
+    color: white;
+}
+.OPCIONES{
+    background: rgba(0,0,0,.5);
+    padding: 30px;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.568);
+    color: white;
+}
+.radio{
+    background: rgba(0,0,0,.5);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 1px blue;
+    color: white;
+ 
+    cursor:pointer;
+    top: 5px; 
+    left: 20px;
+    margin: 1px;
+}
+.check1 label:before{
+    border-radius: 3px solid #0774D9 ;
+
+
+}
+.form-control{
+    background: rgba(0,0,0,.3);
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    width: 20%;
+}
+.add-margin {
+    margin-right: 10px
+ 
+}
+.add-margin1 {
+    margin-right: 25px
+}
+
+
+.check1{
+        border-radius: 3px solid #0774D9 ;
+}

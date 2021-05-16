@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}" type="text/css"/>
+    <title>REGISTROS</title>
+    <style>
+    table{
+        text-align: left;
+        background-color: white;
+        border: 1px solid black;
+        border-collapse: collapse ;
+        width: 40%;
+    }
+    th,td{
+        padding: 10px;
+    }
+    th{
+        text-align: center;
+    }
+    thead{
+        background-color: #246355;
+        border-bottom: solid 5px #0F362D;
+        color: white;
+    }
+    tr:nth-child(){
+        background-color: #ddd;
+    }
+    tr:hover td{
+        background-color:#369681;
+        color:white;
+    }
+</style>
+</head>
+<body>
+        <ul class=" salir"><li><a href="{% url 'logout' %}">Cerrar Sesion</a></li>
+        <h1 class="text1 mb-50 " style="color: white; position: relative; top: 50px; left: 500px;"> REGISTROS </h1>
+        <h1>{{cont}}</h1>
+        <table style="position: relative; top: 50px; left: 350px;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>USUARIO</th>
+                <th>SUBTOTAL</th>
+                <th>DESCUENTO</th>
+                <th>DECUENTO</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if objeto %}
+            {% for registro in objeto %} 
+
+            <tr>
+                <td>{{registro.id}}</td>
+                <td>{{registro.Usuario}}</td>
+                <td>{{registro.subtotal}}</td>
+                <td>{{registro.Descuento}}</td>
+                <td>{{registro.Valor}}</td>
+                <td>{{registro.total}}</td>
+            </tr>
+            {% endfor %}
+            {% else %}
+                <h1 style="color: white;">NO HAY REGISTROS</h1>
+            {% endif %}
+        </tbody>   
+    </table>
+</body>
+</html>

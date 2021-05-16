@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}"/>
+    <style>
+        .button{
+    text-decoration: none;
+    padding: 11px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #222A3F;
+    border-radius: 6px;
+    border: 2px solid gray;
+    width: 200px;
+  }
+  .sesion li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    border: 3px solid #000103f8;
+}
+
+    </style>
+    <title>BOLETOS</title>
+  
+
+</head>
+<body>
+    <div class="form-group text-center pt-3">    
+    <font color="Olive" face="small fonts">
+    <h1 class="text-light mb-6 "> AMERICA&nbsp; AIRLINE </h1>
+    </font>
+    </div>
+    <div class="sesion"><ul><li><a href="{% url 'logout' %}">Cerrar Sesion</a></li></ul></div>
+    <div class="form-group text-center pt-2">  
+    <h5 class="text1 mb-30 "style="color: black;"> INGRESE TODOS LOS DATOS SOLICITADOS PARA LA COMPRA DEL BOLETO</h5>
+    </div>
+    {% if error %}
+        <label class="alert alert-danger " style="position: relative; top: 490px; left: 470px;">{{ error }}</label>
+    {% endif %}
+    <form method="POST" action="{% url 'boletos' %}">
+        {% csrf_token %}
+    </ul>
+
+        <div action="" class="OPCIONES" style="position: relative; top: 15px; left: 400px;">
+            <div class="form-group text-center pt-1"><h2>CLASES</h2></div>
+            <div class="radio" >
+                <input class="check1 mx-sm-1"type="radio" name="radio" id="PRIMERA" value='1'>
+                <label class= "add-margin text-center pt-2 " name="primera" for="PRIMERA"><h6> 1ra CLASE</h6> </label>
+
+                <input class="check1 mx-sm-1 " type="radio" name="radio" id="SEGUNDA" value="2">
+                <label  class= "add-margin text-center  pt-2 " for="SEGUNDA"><h6>2da CLASE</h6>  </label>
+
+                <input class="check1 mx-sm-1 " type="radio" name="radio"  id="TERCERA" value="3">
+                <label class= "add-margin text-center  pt-2 " for="TERCERA"><h6>3ra CLASE</h6> </label>
+            </div>
+            <div class="form-group text-center pt-1"><h2>SERVICIOS</h2></div>
+            <div class="radio" >
+
+                <label class= "add-margin1 text-center pt-2 " for="COMIDA"><h6> COMIDA</h6> </label>
+                <input class="check1 mx-sm-2 "type="text" value="0" name="COMIDA" id="COMIDA">
+                
+                <label  class= "add-margin1 text-center  pt-2 " for="BEBIDA"><h6>BEBIDA</h6>  </label>
+                <input class="check1 mx-sm-3 " type="text" value="0" name="BEBIDA" id="BEBIDA">
+
+                <label class= "add-margin1 text-left pt-2 " for="PELICULA"><h6>PELICULA</h6> </label>
+                <input class="check1  " type="text" name="PELICULA" value="0" id="PELICULA">
+            </div>
+        </div>
+
+        <button type="submit" class=" mx-sm-4 btn btn-block button pt-2" style="position: relative; top: -330px; left: 850px;"> COMPRAR BOLETO </button>  
+        </form>
+        <form method="POST" action="{% url 'factura' %}">
+            {% csrf_token %}
+        <button type="submit" class=" mx-sm-4 btn btn-block button pt-2" style="position: relative; top: -280px; left: 850px;"> GENERAR FACTURA </button>  
+        </form>
+        <form method="POST" action="{% url 'bitacora' %}">
+            {% csrf_token %}
+        <button type="submit" class=" mx-sm-3 btn btn-block button pt-2" style="position: relative; top: -236px; left: 856px;" name="boton" value="0" > REGISTROS </button>  
+        </form>
+        <form method="POST" action="{% url 'eliminar' %}">
+            {% csrf_token %}
+        <button type="submit" class=" mx-sm-3 btn btn-block button pt-2" style="position: relative; top: -191px; left: 856px;" name="boton" value="1"> ELIMINAR REGISTRO </button>  
+        </form>
+        <form method="POST" action="{% url 'borrar' %}">
+            {% csrf_token %}
+        <button type="submit" class=" mx-sm-3 btn btn-block button pt-2" style="position: relative; top: -140px; left: 500px;" name="boton" value="1"> LIMPIAR </button>  
+        </form>
+    {% if mensaje %}
+        <h2 style="color: black; position: relative; top: -140px; left: 400px;">{{mensaje}}</h2>
+    {% else %}
+
+    {% endif %}
+</body>
+</html>
